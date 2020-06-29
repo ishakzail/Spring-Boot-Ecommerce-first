@@ -41,9 +41,7 @@
 		<!-- start: page -->
 		<section class="body-sign">
 			<div class="center-sign">
-				<a href="/" class="logo pull-left">
-					<img src="${pageContext.request.contextPath}/recources/admin/assets/images/logo.png" height="54" alt="Porto Admin" />
-				</a>
+				
 
 				<div class="panel panel-sign">
 					<div class="panel-title-sign mt-xl text-right">

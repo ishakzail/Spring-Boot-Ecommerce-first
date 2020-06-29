@@ -44,21 +44,11 @@ public class searchTag extends RequestContextAwareTag{
 			writer.write("<div class=\"hero__search\">\r\n" + 
 					"                        <div class=\"hero__search__form\">\r\n" + 
 					"                            <form action=\"#\">\r\n" + 
-					"                                <div class=\"hero__search__categories\">\r\n" + 
-					"                                    All Categories\r\n" + 
-					"                                    <span class=\"arrow_carrot-down\"></span>\r\n" + 
-					"                                </div>\r\n" + 
-					"                                <input type=\"text\" placeholder=\"What do yo u need?\">\r\n" + 
+					"                       	<input type=\"text\" placeholder=\"What do yo u need?\">\r\n" + 
 					"                                <button type=\"submit\" class=\"site-btn\">SEARCH</button>\r\n" + 
 					"                            </form>\r\n" + 
 					"                        </div>\r\n" + 
-					"                        <div class=\"hero__search__phone\">\r\n" + 
-					"                            <div class=\"hero__search__phone__icon\">\r\n" + 
-					"                                <i class=\"fa fa-phone\"></i>\r\n" + 
-					"                            </div>\r\n" + 
-					"                          \r\n" + 
-					"                        </div>\r\n" + 
-					"                    </div>\r\n" + 
+					"                     </div>\r\n" + 
 					"                ");
 		} catch (Exception e) {
 			try {
