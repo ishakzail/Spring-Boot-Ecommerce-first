@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1" isELIgnored="false"%>
     
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
-    
+    <%@ taglib prefix="tg" uri="WEB-INF/tags"  %>
     <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"  %>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"  %>
     
@@ -67,7 +67,7 @@
                                     <ul class="product__item__pic__hover">
                                         <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                         <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="${pageContext.request.contextPath}/cart/buy/${product.id}"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">

@@ -23,7 +23,7 @@
 	                            <ul class="featured__item__pic__hover">
 	                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
 	                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-	                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+	                                <li><a href="${pageContext.request.contextPath}/cart/buy/${product.id}"><i class="fa fa-shopping-cart"></i></a></li>
 	                            </ul>
 	                        </div>
 	                        <div class="featured__item__text">
@@ -52,9 +52,8 @@
 	                   
 	                        <div class="featured__item__pic set-bg" data-setbg="${pageContext.request.contextPath}/uploads/images/${photo.name}">
 	                            <ul class="featured__item__pic__hover">
-	                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-	                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-	                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+	                                
+	                                <li><a href="${pageContext.request.contextPath}/cart/buy/${product.id}"><i class="fa fa-shopping-cart"></i></a></li>
 	                            </ul>
 	                        </div>
 	                        <div class="featured__item__text">

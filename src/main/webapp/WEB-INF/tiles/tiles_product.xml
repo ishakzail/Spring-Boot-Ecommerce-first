@@ -16,6 +16,11 @@
   </definition>
   
   
+  <definition name="product.search" extends="template_user">
+    <put-attribute name="content" value="/WEB-INF/views/product/search.jsp" />
+  </definition>
+  
+  
   
   
   

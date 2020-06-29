@@ -52,4 +52,9 @@ public class ProductServiceImpl implements ProductService{
 		return productRepository.relatedProducts(categoryId, status, id, n);
 	}
 
+	@Override
+	public List<Product> search(boolean status, String keyword) {
+		return productRepository.search(status, keyword);
+	}
+
 }

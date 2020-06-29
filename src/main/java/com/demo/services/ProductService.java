@@ -19,4 +19,6 @@ public interface ProductService {
 	public List<Product> featuredProducts( boolean featured, boolean status , int n);
 	
 	public List<Product> relatedProducts(boolean status, int categoryId , int id , int n);
+	
+	public List<Product> search(boolean status , String keyword);
 }

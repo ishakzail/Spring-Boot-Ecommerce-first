@@ -20,4 +20,17 @@
  		<body-content> empty </body-content>
  	</tag>
  	
+ 	<tag>
+ 		<name> searchTag </name>
+ 		<tag-class> com.demo.tags.searchTag </tag-class>
+ 		<body-content> empty </body-content>
+ 	</tag>
+ 	
+ 	
+ 	<tag>
+ 		<name> cartTag </name>
+ 		<tag-class> com.demo.tags.CartTag </tag-class>
+ 		<body-content> empty </body-content>
+ 	</tag>
+ 	
 </taglib>

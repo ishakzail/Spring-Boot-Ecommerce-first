@@ -22,4 +22,9 @@ public interface ProductRepository extends CrudRepository<Product, Integer>{
 	
 	@Query(value="select * from product where status = :status and category_id = :category_id and id != :id limit :n" , nativeQuery = true)
 	public List<Product> relatedProducts(@Param("category_id") int categoryId  ,@Param("status") boolean status ,@Param("id") int id, @Param("n") int n);
+	
+	@Query(value="select Product from product where status = :status and name like %:keyword%" , nativeQuery = true)
+	public List<Product> search(@Param("status") boolean status , @Param("keyword") String keyword);
+	
+	
 }
