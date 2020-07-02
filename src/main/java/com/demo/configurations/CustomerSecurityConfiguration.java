@@ -29,18 +29,19 @@ public class CustomerSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity httpSecurity) throws Exception{
 		httpSecurity.cors().and().csrf().disable();
 		
-		httpSecurity.antMatcher("/cusotmer/**")
+		httpSecurity.antMatcher("/customer/**")
 					.authorizeRequests()
+					.antMatchers("/customer/register").permitAll()
 					.antMatchers("/customer/**").access("hasRole('ROLE_CUSTOMER')")
 					.and()
 					.formLogin().loginPage("/customer-panel")
-					.loginProcessingUrl("/customer-process-login")
+					.loginProcessingUrl("/customer/process-login")
 					.defaultSuccessUrl("/customer-panel/welcome")
 					.failureUrl("/customer-panel/login?error")
 					.usernameParameter("username").passwordParameter("password")
 					.and()
 					.logout()
-					.logoutUrl("/customer-panel/process-logout")
+					.logoutUrl("/customer/process-logout")
 					.logoutSuccessUrl("/customer-panel/login?logout")
 					.deleteCookies("JSESSIONID")
 					.and()

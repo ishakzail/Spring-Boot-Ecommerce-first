@@ -69,7 +69,7 @@
 	                            
 	                            <li>Total <span>${total } DH</span></li>
 	                        </ul>
-	                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+	                        <a href="${pageContext.request.contextPath}/cart/checkout" class="primary-btn">PROCEED TO CHECKOUT</a>
 	                    </div>
 	                </div>
 	            </div>

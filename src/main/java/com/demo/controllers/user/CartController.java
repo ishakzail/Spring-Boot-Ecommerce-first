@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ import com.demo.models.Category;
 import com.demo.models.Item;
 import com.demo.models.Product;
 import com.demo.services.CategoryService;
+import com.demo.services.InvoiceService;
 import com.demo.services.ProductService;
 
 @Controller
@@ -27,6 +29,7 @@ public class CartController {
 	
 	@Autowired
 	private ProductService productService;
+	
 	
 	
 	@Autowired
@@ -87,6 +90,16 @@ public class CartController {
 		}
 		
 		return "redirect:/cart/index";
+	}
+	
+	@RequestMapping(value="checkout" , method = RequestMethod.GET)
+	public String checkout(Authentication authentication, HttpSession session) {
+		if(authentication == null) {
+			return "redirect:/customer-panel";
+		}else {
+			return "redirect:/cart/index";
+		}
+		
 	}
 	
 	

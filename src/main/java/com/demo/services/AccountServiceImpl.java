@@ -33,4 +33,9 @@ public class AccountServiceImpl implements AccountService{
 		
 	}
 
+	@Override
+	public Account save(Account account) {
+		return accountRepository.save(account);
+	}
+
 }

@@ -27,7 +27,8 @@ public class TilesConfiguration implements WebMvcConfigurer{
 					"/WEB-INF/tiles/tiles_admin_product.xml",
 					"/WEB-INF/tiles/tiles_admin_photo.xml",
 					"/WEB-INF/tiles/tiles_product.xml",
-					"/WEB-INF/tiles/tiles_cart.xml"
+					"/WEB-INF/tiles/tiles_cart.xml",
+					"/WEB-INF/tiles/tiles_customer.xml"
 			});
 			return configurer;
 		}
